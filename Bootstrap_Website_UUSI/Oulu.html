@@ -6,120 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oulu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Oulu.css">
 </head>
 
-
 <nav class="navbar navbar-expand-md"></nav>
-<a href="index.html" class="nav-link" href="#" button class=""><h1>
+<a href="index.html" class="nav-link" href="#" button class="">
+  <h1>
   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
     <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
     <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-  </svg> Pääsivu</h1></a>
+  </svg> 
+  </h1>
+</a>
 
-<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
+
+<!-- Pudotusvalikon sisältö -->
 <div class="collapse navbar-collapse" id="main-navigation">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="Oulu.html" class="nav-link" href="#" button class="">Oulu</a>
-        </li>
-        <li class="nav-item">
-          <a href="Kuopio.html" class="nav-link" href="#" button class="">Kuopio</a>
+  <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="Oulu.html" class="nav-link" href="#" button class="">Oulu</a>
       </li>
-    </ul>
+      <li class="nav-item">
+        <a href="Kuopio.html" class="nav-link" href="#" button class="">Kuopio</a>
+    </li>
+  </ul>
 </div>
-</nav>
-
-
 
 <body>
+  <header class="header">
+
+  </header>
     
-    <style>
-        .my-custom-row {
-            background-color: antiquewhite;
-            height: 400px;
-        }
-    </style>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">Col 1</div>
-            <div class="col-sm-8">Col 2</div>
-        </div>    
-
-        <div class="row">
-            <div class="col-sm-6 order-sm-1">Col 1</div>
-            <div class="col-sm-6 order-sm-2">Col 2</div>
-        </div> 
-
-        <div class="row">
-            <div class="col-sm-4 offset-2">Col 1</div>
-            <div class="col-sm-4 offset-1">Col 2</div>
-        </div> 
-
-        <div class="row my-custom-row justify-content-around align-items-center">
-            <div class="col-sm-4"><div class="padding-3 border bg-light">Col 1</div></div>
-            <div class="col-sm-4"><div class="padding-3 border bg-light">Col 2</div></div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
-                </button>
-
-            </div>
-            <div class="col"><button type="button" class="btn btn-secondary">Secondary</button></div>
-            <div class="col"><button type="button" class="btn btn-danger">Danger</button></div>
-       
-        </div>
-
-    </div>
-
-
-<!--Accordion-->
+<!-- Accordion -->
 <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Oulun historia
+          <strong>Oulun historia</strong>
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+          Ruotsin kuninkaan Kaarle IX:n vuonna 1605 perustama Oulu on Pohjois-Suomen vanhin kaupunki. Oulun suosio alkoi kasvaa jo 1760-luvulla, kun kaupunki sai tapulikaupunkioikeudet, jotka mahdollistivat 
+          ulkomaankaupan.<br>
+          Oulu tunnettiin pitkään tervakaupunkina: 1800-luvulla Oulu oli koko vuosisadan suurin tervanviejä Suomessa.<br>
+          Oulu tunnetaan nykypäivänä teknologiakaupunkina. Vuonna 1982 Ouluun perustettiin Pohjoismaiden ensimmäinen teknologiakylä, Technopolis.
+        </div> <!-- Lähde: https://fi.wikipedia.org/wiki/Oulu -->
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Oulu opiskelijakaupunkina
+          <strong>Oulu opiskelijakaupunkina</strong>
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          Oulussa on reilusti tekemistä tarjolla opiskelijoille. Oulu on myös Suomen edullisin opiskelija-asumisen kannalta. Oulun korkeakoululiikunta tarjoaa erilaisia kursseja ja esimerkiksi palloilu- ja 
+          joukkuepeliryhmiä. <!-- Lähde: https://www.oulu.fi/fi/hae/tutustu-oulun-yliopistoon/opiskelijan-oulu -->
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Kulttuuripääkaupunki 2026: Oulu
+          <strong>Oulu - Euroopan kulttuuripääkaupunki 2026</strong>
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          
         </div>
       </div>
     </div>
   </div>
-
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -140,6 +103,6 @@
     </div>
   </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

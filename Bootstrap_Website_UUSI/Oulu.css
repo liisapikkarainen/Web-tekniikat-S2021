@@ -1,0 +1,10 @@
+.header {
+  background-image: url("images/oulu-background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 2000px;
+  height: 1124px;
+}
+
+  
