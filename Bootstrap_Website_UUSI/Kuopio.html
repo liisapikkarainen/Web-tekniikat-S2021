@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuopio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Kuopio.css">
 </head>
 
 <nav class="navbar navbar-expand-md"></nav>
-<a href="index.html" class="nav-link" href="#" button class=""><h1>
+
+<!-- Logo (klikkaamalla etusivulle) -->
+<a href="index.html" class="nav-link" href="#" button class="">
+  <h1>
   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
     <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
     <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-  </svg> </h1></a>
+  </svg> 
+  </h1>
+</a>
 
+<!-- Navbar pudotusvalikon nappi -->
 <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
+
+<!-- Pudotusvalikon sisältö -->
 <div class="collapse navbar-collapse" id="main-navigation">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="Oulu.html" class="nav-link" href="#" button class="">Oulu</a>
-        </li>
-        <li class="nav-item">
-          <a href="Kuopio.html" class="nav-link" href="#" button class="">Kuopio</a>
+  <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="Oulu.html" class="nav-link" href="#" button class="">Oulu</a>
       </li>
-    </ul>
+      <li class="nav-item">
+        <a href="Kuopio.html" class="nav-link" href="#" button class="">Kuopio</a>
+    </li>
+  </ul>
 </div>
 </nav>
 
+<!-- Carousel -->
 <body>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -68,16 +78,15 @@
     </button>
   </div>
 
-  <br>
+  <!-- List -->
   <div id="list-example" class="list-group">
-    <a class="list-group-item list-group-item-action" href="#list-item-1">Väkiluku ja väestönkehitys</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-2">Tunnettuja kuopiolaisia</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-1"><strong>Väkiluku ja väestönkehitys</strong></a>
+    <a class="list-group-item list-group-item-action" href="#list-item-2"><strong>Tunnettuja kuopiolaisia</strong></a>
+    <a class="list-group-item list-group-item-action" href="#list-item-3"><strong>Etäisyyksiä Suomen kaupunkeihin</strong> </a>
   </div>
   <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-    <h4 id="list-item-1">Väkiluku ja väestönkehitys</h4>
-    <p><strong>1815:</strong> 1 087 asukasta
+    <h4 id="list-item-1" class="sisennys">Väkiluku ja väestönkehitys</h4>
+    <p class="sisennys"><strong>1815:</strong> 1 087 asukasta
       <br><strong>1850:</strong> 2 849 asukasta
       <br><strong>1870:</strong> 5 639 asukasta
       <br><strong>1890:</strong> 8 882 asukasta
@@ -85,88 +94,29 @@
       <br><strong>1920:</strong> 18 725 asukasta
       <br><strong>1940:</strong> 25 157 asukasta
       <br><strong>1960:</strong> 44 911 asukasta
-      <br><strong>1975:</strong> 71 844 asukasta
+      <br><strong>1975:</strong> 71 844 asukasta                                                
+      <!-- Lähde: https://fi.wikipedia.org/wiki/Kuopio -->
     </p>
-    <h4 id="list-item-2">Tunnettuja kuopiolaisia</h4>
-    <p>
+    <h4 id="list-item-2" class="sisennys">Tunnettuja kuopiolaisia</h4>
+    <p class="sisennys">
       1. Minna Canth, suomalainen kirjailija. Asui Kuopiossa noin puolet elämästään. Canth oli Suomessa merkittävä mielipidevaikuttaja. Hän edisti naisten asemaa muun muassa parantamalla tyttöjen koulutusmahdollisuuksia.<br>
       2. Pertti Olavi ”Spede” Pasanen. Hän oli koomikko, käsikirjoittaja, elokuvaohjaja, tuottaja, lauluntekijä, näyttelijä ja keksijä. Hän oli Suomessa suosittu viihteentekijä 1960-luvulta 1990-luvulle.<br>
       3. Paavo Lipponen, suomalainen poliitikko. Hän oli SDP:n puheenjohtaja 1993-2005 ja Suomen pääministeri vuosina 1995-2003.<br>
-      4. Hanna Partanen ja hänen miniänsä Irene Partanen, Suomen tunnetuimmat kalakukkoleipurit<br>
+      4. Hanna Partanen ja hänen miniänsä Irene Partanen, Suomen tunnetuimmat kalakukkoleipurit. Heidän tuotteitaan myydään yhä esimerkiksi Kuopion torilla.<br>
+      <!-- Lähde: https://fi.wikipedia.org/wiki/Luettelo_tunnetuista_kuopiolaisista -->
     </p>
-    <h4 id="list-item-3">Item 3</h4>
-    <p>...</p>
-    <h4 id="list-item-4">Item 4</h4>
-    <p>...</p>
+    <h4 id="list-item-3" class="sisennys">Etäisyyksiä Suomen kaupunkeihin</h4>
+    <p class="sisennys">
+      Helsinkiin 382 km<br>
+      Rovaniemelle 491 km<br>
+      Turkuun 449 km<br>
+      Ouluun 284 km<br>
+      Jyväskylään 144 km<br>
+      Vaasaan 375 km<br>
+      <!-- Lähde: https://fi.wikipedia.org/wiki/Kuopio#Et%C3%A4isyyksi%C3%A4_maanteitse -->
+    </p>
   </div>
-<br>
-
-<!-- Accordion -->
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <strong>Kuopio1</strong>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        
-
-
-      </div> 
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <strong>Kuopio2</strong>
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        
-
-
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <strong>Kuopio3</strong>
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
