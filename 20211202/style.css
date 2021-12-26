@@ -1,0 +1,44 @@
+h1 {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.highlight {
+    font-weight: bold;
+    color: rgb(212, 226, 12);
+}
+
+#main-heading, h1 + p{
+    color: rgb(223, 6, 6);
+}
+
+h1 ~ p {
+    font-style: italic;
+}
+
+.purple{
+    color: purple;
+}
+
+div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[required] {
+border: 2px solid black;
+}
+
+[class*="article"]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p:hover{
+    font-size: 2rem;
+}
+.half{
+    width: 50%;
+    float: left;
+}
