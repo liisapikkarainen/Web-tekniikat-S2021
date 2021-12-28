@@ -50,7 +50,7 @@ background: rgba(0, 0, 0, 0.6);
 left: 50%;
 position: absolute;
 top: 45%;
-transform: translate(-50%, -45%); /* täältä korjaus */
+transform: translate(-50%, -35%); /* täältä korjaus */
 text-align: center;
 }
 
@@ -115,6 +115,7 @@ width: 100%;
 color: white;
 text-align: center;
 position: relative;
+transform: translate(0%, 150%); 
 }
 
 /* Footerin tekstin väri ja koko */
@@ -125,24 +126,15 @@ color: white;
 font-size: 30px;
 }
 
+/* Navbarin otsikkojen välille väliä */
 .nav-item {
 padding: 15px;
 }
 
-.container {
-padding-bottom: 150px;
-}
-
-
-
-
-
-
-
 .container-features {
-  padding-bottom: 500px;
+padding-bottom: 500px;
 }
 
-.col-lg-6, col-md-4, col-sm-12 {
-  padding-bottom: 200px;
+.col-lg-6 {
+padding-bottom: 255px;
 }
