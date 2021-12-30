@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.card {
+  background: #8ccdfa;
+}
+
 body {
   background: #001e80;
 }
@@ -37,10 +41,23 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("images/header-background.jpg");
   background-size: cover;
   background-position: stretch;
   position: relative;
+}
+
+.header h3 {
+  background-color: #8ccdfa;
 }
 
 /* Himmennys taustalle: */
@@ -131,7 +148,7 @@ body {
 .footerText {
   padding: 50px;
   padding-top: 50px;
-  color: white;
+  color: #144e02;
   font-size: 30px;
 }
 
