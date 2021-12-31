@@ -44,7 +44,7 @@ body {
 .header {
   @include flexCenter();
 
-  background-image: url("images/header-background.jpg");
+  background-image: url("../images/header-background.jpg");
   background-size: cover;
   background-position: stretch;
   position: relative;
