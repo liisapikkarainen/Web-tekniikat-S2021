@@ -108,3 +108,9 @@ button:hover span {
 button:hover {
     border: none;
 }
+.joke {
+    position: absolute;
+    left: 35%; /* Saadaan vitsi pysymään tietyssä kohdassa vaikka näytön resoluutio vaihtuisi */
+    top: 75%;
+    color: rgb(255, 183, 89);
+}
